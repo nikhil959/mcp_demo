@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 # Update package lists (without upgrading everything)
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install -y -t bionic-security \
     curl \
     openssl \
     python3 \
